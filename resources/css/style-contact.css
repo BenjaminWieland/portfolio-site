@@ -1,0 +1,63 @@
+.contact-header {
+    color: grey;
+}
+
+.contact-header:hover {
+    color: grey;
+    cursor: default;
+}
+
+.privat-header {
+    color: white;
+}
+
+.privat-header:hover {
+    color: #DD0848;
+}
+
+#wieland-container {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 5rem 2.5rem 5rem;
+}
+
+#wieland-img {
+    max-width: 50rem;
+    min-width: 10rem;
+    height: auto;
+}
+
+.contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 12rem 8rem 12rem;
+}
+
+#contact-heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-icon {
+    max-width: 5rem;
+    height: auto;
+}
+
+.contact-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    margin-left: 3rem;
+}

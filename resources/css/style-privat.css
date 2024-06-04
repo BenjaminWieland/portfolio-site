@@ -1,0 +1,242 @@
+/* Allgemein */
+
+.privat {
+    color: grey;
+}
+
+.privat:hover {
+    color: grey;
+    cursor: default;
+}
+
+/* Tiles */
+
+#tile-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+.tiles {
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 12rem 2rem 12rem;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px white;
+    width: 20rem;
+    min-width: 15rem;
+    height: auto;
+    min-height: 20rem;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    /* padding: 4.5rem 1.5rem 0rem 1.5rem; */
+    transition: transform 0.4s ease;
+}
+
+.familienmensch {
+    background-image: url("../images/familie.png");
+}
+
+.speaker {
+    background-image: url("../images/vortrag.png");
+}
+
+.bambini {
+    background-image: url("../images/bambini.png");
+}
+
+.natur {
+    background-image: url("../images/natur.png");
+}
+
+.freund {
+    background-image: url("../images/freund.png");
+}
+
+.heimwerker {
+    background-image: url("../images/heimwerker.png");
+}
+
+.tile h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.tile p {
+    font-family: "Poppins", sans-serif;
+    font-size: .9rem;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    transition: transform .4s ease;
+}
+
+.tile:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.3);
+    h3 {
+        transition: color .4s;
+        color: #DD0848;
+    }
+    cursor: pointer;
+    p {
+        display: initial;
+    }
+}
+
+/* Buttons */
+
+.buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 12rem 5rem 12rem;
+}
+
+.btn-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.btn-icon-contact {
+    height: 2rem;
+    width: auto;
+    margin-right: .5rem;
+}
+
+.btn-icon-download {
+    height: 1.25rem;
+    width: auto;
+    margin-right: .5rem;
+}
+
+.btn-contact {
+    font-size: 2.25rem;
+    padding: .25rem .75rem;
+    font-weight: 600;
+    color: #DD0848;
+    background-color: white;
+    border: 1px solid #DD0848;
+}
+
+.btn-contact:active {
+    color: grey;
+}
+
+.btn-download {
+    font-size: 1.5rem;
+    padding: .25rem .75rem;
+    font-weight: 500;
+}
+
+.bottom {
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+/* Footer */
+
+.footer {
+    justify-content: center;
+    background-color:grey;
+    height: auto;
+    padding: 2rem 15rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    color: white ;
+    font-weight: 500;
+}
+
+.footer-column p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.footer-column img {
+    max-width: 8rem;
+    height: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.linkedin img{
+    max-width: 3rem;
+    height: auto;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1050px) {
+    #footer-container {
+        padding-bottom: 2rem;
+    }
+
+    .footer-column p {
+        font-size: 0.85rem;
+    }
+
+    .footer-column img {
+        max-width: 30%;
+        height: auto;
+        margin: 5% 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        height: 15rem;
+    }
+    
+    .footer-column p {
+        font-size: 0.5rem;
+    }
+
+    .footer-column img {
+        max-width: 50%;
+        height: auto;
+        margin: 5% auto;
+    }
+
+    #footer-container {
+        width: 90%;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+        margin: 5% auto;
+        max-width: 30%;
+    }
+}
