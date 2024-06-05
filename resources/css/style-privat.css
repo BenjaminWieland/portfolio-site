@@ -169,7 +169,6 @@
     flex-direction: column;
     justify-content: first baseline;
     align-items: center;
-    text-align: center;
 }
 
 .footer-label {
@@ -184,12 +183,12 @@
     font-size: 1rem;
     color: white;
     font-weight: 400;
+    text-align: center;
 }
 
 .footer-column img {
     max-width: 8rem;
     height: auto;
-    display: block;
     margin-bottom: 5%;
 }
 
@@ -199,8 +198,12 @@
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1050px) {
-    #footer-container {
-        padding-bottom: 2rem;
+    .footer {
+        padding: 3rem;
+    }
+
+    .footer-column {
+        text-align: center;
     }
 
     .footer-column p {
@@ -210,33 +213,85 @@
     .footer-column img {
         max-width: 30%;
         height: auto;
-        margin: 5% 0;
+        /* margin: 5% 0; */
     }
 }
 
 @media only screen and (max-width: 800px) {
+    #tile-heading {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .tiles {
+        padding: 1rem;
+    }
+
+    .buttons {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .btn-icon-contact {
+        height: 1.25rem;
+        width: auto;
+        margin-right: .5rem;
+    }
+    
+    .btn-icon-download {
+        height: 1rem;
+        width: auto;
+        margin-right: .5rem;
+    }
+    
+    .btn-contact {
+        font-size: 1.75rem;
+        padding: .25rem .75rem;
+        font-weight: 600;
+        color: #DD0848;
+        background-color: white;
+        border: 1px solid #DD0848;
+    }
+
+    .btn-download {
+        font-size: 1rem;
+        padding: .25rem .75rem;
+        font-weight: 500;
+    }
+
     .footer {
-        height: 15rem;
+        flex-direction: column;
+        height: auto;
+        padding: .5rem .5rem 1.25rem .5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 0rem 1rem 0rem;
     }
     
     .footer-column p {
-        font-size: 0.5rem;
+        font-size: .85rem;
     }
 
     .footer-column img {
-        max-width: 50%;
+        width: 5rem;
         height: auto;
-        margin: 5% auto;
-    }
-
-    #footer-container {
-        width: 90%;
+        margin-bottom: 0rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
 
     .footer-column {
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        margin: 5% auto;
-        max-width: 30%;
+        text-align: none;
+    }
+
+    .footer-label {
+        display: none;
     }
 }
