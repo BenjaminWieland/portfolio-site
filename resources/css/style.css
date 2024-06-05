@@ -80,6 +80,10 @@ body {
     .mid-screen {
         display: none;
     }
+
+    .btn:hover {
+        transform: none;
+    }
 }
 
 @media only screen and (min-width: 840px) and (max-width: 1275px) {
@@ -153,6 +157,42 @@ body {
 .burger-menu {
     height: 2.5rem;
     width: auto;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding-right: 2rem;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav.nav-open {
+    display: flex;
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1300px) {
@@ -796,6 +836,14 @@ body {
     .content {
         padding: 2rem 5rem;
     }
+
+    .content-link:hover {
+        transform: none;
+    }
+
+    .img-flyer:hover {
+        transform: none;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 669px) {
@@ -833,6 +881,14 @@ body {
     .content {
         padding: 2rem 5rem;
     }
+
+    .content-link:hover {
+        transform: none;
+    }
+
+    .img-flyer:hover {
+        transform: none;
+    }
 }
 
 @media only screen and (min-width: 150px) and (max-width: 539px) {
@@ -869,5 +925,13 @@ body {
 
     .content {
         padding: 2rem 1rem;
+    }
+
+    .content-link:hover {
+        transform: none;
+    }
+
+    .img-flyer:hover {
+        transform: none;
     }
 }
