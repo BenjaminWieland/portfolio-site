@@ -226,6 +226,19 @@
         padding: 1rem;
     }
 
+    .tile p {
+        display: initial;
+    }
+
+    .tile:hover {
+        transform: none;
+        h3 {
+            transition: color .4s;
+            color: #DD0848;
+        }
+        cursor: pointer;
+    }
+
     .buttons {
         padding: 0rem 1rem 0rem 1rem;
     }
